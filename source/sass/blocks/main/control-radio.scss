@@ -1,0 +1,80 @@
+.control-radio {
+  position: relative;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.control-radio__field {
+  &:disabled:hover {
+    cursor: default;
+  }
+}
+
+.control-radio__text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 0 0 0 34px;
+}
+
+.control-radio__mark {
+  position: absolute;
+  top: -5px;
+  display: block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 2px solid #bdbdbd;
+  background-color: #ffffff;
+}
+
+
+.control-radio__field:checked + .control-radio__mark {
+  border: 2px solid #7859cf;
+  background-color: #7859cf;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px #ffffff inset;
+  display: block;
+}
+
+.control-radio__field:disabled + .control-radio__mark {
+  border: 2px solid #e2e2e2;
+  background-color: transparent;
+}
+
+.control-radio__field:disabled ~ .control-radio__text {
+  color: #bdbdbd;
+}
+
+.control-radio:hover .control-radio__mark {
+  border: 2px solid #9070ec;
+  background-color: rgba(120, 89, 207, 0.25);
+  box-shadow: 0 0 0 2px #ffffff inset;
+}
+
+.control-radio__field:focus + .control-radio__mark {
+  border: 2px solid #9070ec;
+  background-color: rgba(120, 89, 207, 0.25);
+  box-shadow: 0 0 0 2px #ffffff inset;
+}
+
+.control-radio__field:disabled:hover + .control-radio__mark {
+  border: 2px solid #e2e2e2;
+  cursor: default;
+  background-color: transparent;
+}
+
+.control-radio__field:disabled:hover ~ .control-radio__text {
+  cursor: default;
+}
+
+.control-radio__field:disabled:checked + .control-radio__mark {
+  border: 2px solid #e2e2e2;
+  cursor: default;
+  background-color: #e2e2e2;
+}

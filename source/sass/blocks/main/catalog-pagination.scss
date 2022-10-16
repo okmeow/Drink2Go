@@ -1,0 +1,230 @@
+.catalog-pagination {
+  margin-bottom: 33px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 80px;
+  }
+
+  @media (min-width: 1440px) {
+    grid-column: 2 / -1;
+    margin-bottom: 78px;
+  }
+}
+
+.catalog-pagination__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.catalog-pagination__item {
+  display: block;
+  position: relative;
+}
+
+.catalog-pagination__item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.catalog-pagination__item:first-child {
+  @media (min-width: 768px) {
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
+
+.catalog-pagination__item:last-child {
+  @media (min-width: 768px) {
+    margin-left: -20px;
+  }
+}
+
+.catalog-pagination__link {
+  display: block;
+  box-sizing: border-box;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: center;
+  color: #7859cf;
+  background-color: #ffffff;
+  text-decoration: none;
+  padding: 8px 15px;
+
+  &:focus {
+    color: #ffffff;
+    background-color: #9070ec;
+    outline: none;
+  }
+
+  &:hover {
+    color: #ffffff;
+    background-color: #9070ec;
+  }
+
+  &:active {
+    color: #ffffff;
+    background-color: #7859cf;
+  }
+}
+
+.catalog-pagination__link--disabled {
+  background-color: #e2e2e2;
+  color: #ffffff;
+  cursor: default;
+
+  &:focus {
+    background-color: #e2e2e2;
+    outline: none;
+  }
+
+  &:hover {
+    background-color: #e2e2e2;
+  }
+
+  &::after {
+    border-top: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+  }
+}
+
+.catalog-pagination__link--current {
+  color: #333333;
+  background-color: transparent;
+  font-weight: 600;
+
+  &:hover {
+    color: #333333;
+    background-color: transparent;
+    cursor: default;
+  }
+}
+
+.catalog-pagination__link--forward {
+  &::after {
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-top: 2px solid #7859cf;
+    border-right: 2px solid #7859cf;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 16px;
+    right: 16px;
+
+    @media (min-width: 768px) {
+      content: "Вперёд";
+      border: none;
+      transform: none;
+      color: #7859cf;
+      font-size: 14px;
+      line-height: 24px;
+      font-weight: 400;
+      top: 8px;
+      left: 40px;
+    }
+
+    @media (min-width: 1440px) {
+      top: 8px;
+      left: 40px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    padding: 10px 50px;
+    width: 140px;
+    margin-right: -20px;
+  }
+}
+
+.catalog-pagination__link--forward:focus {
+  &::after {
+    border-top: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+
+    @media (min-width: 768px) {
+      border: none;
+      color: #ffffff;
+    }
+  }
+}
+
+.catalog-pagination__link--forward:hover {
+  &::after {
+    border-top: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+
+    @media (min-width: 768px) {
+      border: none;
+      color: #ffffff;
+    }
+  }
+}
+
+.catalog-pagination__link--backward {
+  &::after {
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-top: 2px solid #7859cf;
+    border-right: 2px solid #7859cf;
+    transform: rotate(225deg);
+    position: absolute;
+    top: 16px;
+    right: 16px;
+
+    @media (min-width: 768px) {
+      content: "Назад";
+      border: none;
+      transform: none;
+      color: #7859cf;
+      font-size: 14px;
+      line-height: 24px;
+      font-weight: 400;
+      position: absolute;
+      top: 8px;
+      left: 49px;
+    }
+
+    @media (min-width: 1440px) {
+      top: 8px;
+      left: 49px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    padding: 10px 50px;
+    width: 140px;
+  }
+}
+
+.catalog-pagination__link--backward:focus {
+  &::after {
+    border-top: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+
+    @media (min-width: 768px) {
+      border: none;
+      color: #ffffff;
+    }
+  }
+}
+
+.catalog-pagination__link--backward:hover {
+  &::after {
+    border-top: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+
+    @media (min-width: 768px) {
+      border: none;
+      color: #ffffff;
+    }
+  }
+}

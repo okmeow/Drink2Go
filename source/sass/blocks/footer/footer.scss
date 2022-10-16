@@ -1,0 +1,145 @@
+.footer {
+  box-sizing: border-box;
+  background-color: #ffffff;
+  min-width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    min-width: 768px;
+  }
+
+  @media (min-width: 1440px) {
+    min-width: 1440px;
+  }
+}
+
+.footer__wrapper {
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media (min-width: 1440px) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1440px;
+    padding: 30px 40px 40px 40px;
+  }
+}
+
+.footer__social {
+  margin: 0 0 42px 0;
+
+  @media (min-width: 768px) {
+    margin: 0 0 32px 0;
+  }
+
+  @media (min-width: 1440px) {
+    margin-right: 28px;
+  }
+}
+
+.footer__navigation {
+  margin-bottom: 49px;
+
+  @media (min-width: 768px) {
+    margin: 0 30px 30px 20px;
+  }
+
+  @media (min-width: 1440px) {
+    margin: 10px 125px 0 0;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 81px;
+    left: -100vw;
+    width: 200vw;
+    height: 1px;
+    background-color: #f0ebff;
+
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 294px;
+    left: -100vw;
+    width: 200vw;
+    height: 1px;
+    background-color: #f0ebff;
+
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+}
+
+.footer__media {
+  margin-bottom: 49px;
+
+  @media (min-width: 768px) {
+    margin-right: 30px;
+  }
+
+  @media (min-width: 1440px) {
+    margin: 10px 125px 0 0;
+  }
+}
+
+.footer__contacts {
+  margin-bottom: 35px;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -20px;
+    left: -100vw;
+    width: 200vw;
+    height: 1px;
+    background-color: #f0ebff;
+
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 137px;
+    left: -100vw;
+    width: 200vw;
+    height: 1px;
+    background-color: #f0ebff;
+
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    margin-top: 10px;
+  }
+}
+
+.footer__developers {
+  @media (min-width: 768px) {
+    margin: 0 0 0 245px;
+  }
+
+  @media (min-width: 1440px) {
+    margin: 17px 0 0 540px;
+  }
+}

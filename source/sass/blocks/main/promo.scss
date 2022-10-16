@@ -1,0 +1,26 @@
+.promo {
+  background-color: #f3ebe1;
+
+  @media (min-width: 768px) {
+    margin-bottom: 228px;
+  }
+
+  @media (min-width: 1440px) {
+    margin-bottom: 82px;
+  }
+}
+
+.promo__wrapper {
+  box-sizing: border-box;
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+
+  @media (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 1440px;
+  }
+}

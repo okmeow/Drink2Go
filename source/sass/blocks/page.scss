@@ -1,0 +1,27 @@
+.page {
+  min-width: 320px;
+  height: 100%;
+  margin: 0 auto;
+  background-color: #ffffff;
+
+  @media (min-width: 768px) {
+    min-width: 768px;
+  }
+
+  @media (min-width: 1440px) {
+    min-width: 1440px;
+  }
+}
+
+.page__body {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #333333;
+  background-color: #ffffff;
+  margin: 0 auto;
+  min-height: 100%;
+  position: relative;
+  overflow-x: hidden;
+}

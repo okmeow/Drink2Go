@@ -1,0 +1,35 @@
+.footer-developers {
+  display: flex;
+}
+
+.footer-developers__link {
+  text-decoration: none;
+  margin: 8px 0 25px 37px;
+  color: #bdbdbd;
+
+  @media (min-width: 1440px) {
+    margin-bottom: 0;
+  }
+
+  &:focus {
+    color: #7859cf;
+    outline: none;
+  }
+
+  &:hover {
+    color: #7859cf;
+  }
+
+  &:active {
+    color: #593cac;
+  }
+}
+
+.footer-developers__description {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  position: relative;
+  top: -5px;
+}

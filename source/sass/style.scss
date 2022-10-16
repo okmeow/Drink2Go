@@ -1,0 +1,33 @@
+@import "blocks/fonts.scss";
+@import "blocks/visually-hidden.scss";
+@import "blocks/page.scss";
+@import "blocks/button.scss";
+@import "blocks/img.scss";
+//header
+@import "blocks/header/header.scss";
+@import "blocks/header/navigation.scss";
+@import "blocks/header/user-info.scss";
+//main
+@import "blocks/main/main-container.scss";
+@import "blocks/main/promo.scss";
+@import "blocks/main/promo-card.scss";
+@import "blocks/main/slider.scss";
+@import "blocks/main/advantages.scss";
+@import "blocks/main/catalog.scss";
+@import "blocks/main/map.scss";
+@import "blocks/main/catalog-filter.scss";
+@import "blocks/main/range.scss";
+@import "blocks/main/control-checkbox.scss";
+@import "blocks/main/checkbox.scss";
+@import "blocks/main/control-radio.scss";
+@import "blocks/main/radio.scss";
+@import "blocks/main/catalog-products.scss";
+@import "blocks/main/coffee-card.scss";
+@import "blocks/main/catalog-pagination.scss";
+//footer
+@import "blocks/footer/footer.scss";
+@import "blocks/footer/social.scss";
+@import "blocks/footer/footer-navigation.scss";
+@import "blocks/footer/media.scss";
+@import "blocks/footer/footer-contacts.scss";
+@import "blocks/footer/footer-developers.scss";

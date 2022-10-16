@@ -1,0 +1,13 @@
+.radio__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.radio__item:not(:last-child) {
+  margin-bottom: 21px;
+
+  @media (min-width: 768px) {
+    margin: 0 0 20px 0;
+  }
+}
